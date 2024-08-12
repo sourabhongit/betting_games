@@ -1,0 +1,213 @@
+.lottery-container {
+  perspective: 1000px;
+  max-width: 500px;
+  height: 100vh;
+  /*margin-top: 70px;*/
+  background-image: url(/assets/images/frontend/images/background.jpg);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.top-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.icons {
+  position: absolute;
+  left: 380px;
+}
+
+.left-icon img,
+.right-icon .coin img,
+.right-icon .icons img {
+  height: 50px;
+}
+
+.right-icon {
+  display: flex;
+  align-items: center;
+}
+
+.right-icon .coin {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+.right-icon .coin span {
+  margin-right: 5px;
+  font-size: 20px;
+}
+
+.right-icon .icons img {
+  margin-left: 5px;
+}
+
+.lottery-tickets {
+  padding: 20px;
+}
+
+.ticket {
+height:224px;
+  background-image: url(/public/assets/images/frontend/images/bingo.png);
+  background-size: cover;
+  color: #000;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 10px;
+  position: relative;
+}
+
+.win-text {
+  display: inline-block;
+  transform: rotate(340deg);
+  transform-origin: center;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  padding: 0px 20px;
+  color: #df1616;
+  position: relative;
+  font-family: "Arial Black", sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.overlay-image {
+  position: absolute;
+  top: 43px;
+  left: 0px;
+  width: 140px;
+  height: 140px;
+  z-index: 1;
+}
+
+.win {
+  font-size: 50px;
+  color: #ff0000;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  position: relative;
+}
+
+.win::before {
+  content: "WIN";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  color: #00ff00;
+  z-index: -1;
+  text-shadow: none;
+}
+
+.price {
+  font-size: 20px;
+  color: #181301;
+  /* margin-top: -10px; */
+}
+
+.amount {
+  font-size: 50px;
+  color: #9415ab;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.gift-coins {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gift-coins img {
+  height: 60px;
+  margin: 0 10px;
+}
+
+.join-fee {
+  font-weight: 900;
+  font-size: 18px;
+  margin-top: 6px;
+}
+
+.buy_ticket{
+    position: absolute;
+    right: 4%;
+    padding:1%;
+    padding-y: 0.15rem;
+    padding-x: 0.42rem;
+}
+.progress-bar {
+  bottom: -23%;
+  width:70%;
+  background-color: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 25px;
+  margin-top: 95px;
+  position: relative;
+}
+
+.progress-bar .progress {
+  background-color: #e60000;
+  height: 100%;
+  color: #fff;
+  text-align: center;
+  line-height: 20px;
+}
+.progress-value {
+  margin-left: 10px;
+  font-weight: 800;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.progress {
+  position: relative;
+}
+
+.my-ticket {
+  background: #e2d139; /* Bright gold color */
+  border: 3px solid #ff9800; /* Bright orange-gold color */
+  border-radius: 12px;
+  padding: 20px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.ticket-header {
+  background: #ff9800; /* Bright orange-gold color */
+  color: #fff;
+  padding: 12px;
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.ticket-body {
+  padding: 15px;
+}
+
+.prize-info, .ticket-info {
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.label {
+  font-weight: bold;
+  color: #ff9800;
+}
+
+.value {
+  color: #333;
+}

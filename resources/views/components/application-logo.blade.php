@@ -1,0 +1,1 @@
+<em class="icon w-100 ad-logo-image ni ni-linux" style="color: black; font-size: 50px"></em>
